@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngvideogames-dd488": {
+      "hosting": {
+        "ngVideogames": [
+          "ngvideogames-dd488"
+        ]
+      }
+    }
+  }
+}
