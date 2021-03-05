@@ -5,4 +5,5 @@ export interface Game {
     platform: string
     year: number
     score: number
+    logo: string
 }
