@@ -6,4 +6,5 @@ export interface Game {
     year: number
     score: number
     logo: string
+    icon: String
 }
