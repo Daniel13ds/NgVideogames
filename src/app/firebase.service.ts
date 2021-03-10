@@ -7,10 +7,15 @@ import { Game } from 'src/models/game';
   providedIn: 'root'
 })
 export class FirebaseService {
+  collection = 'games'
 
   constructor(private firestore: AngularFirestore) { }
 
   getGames() : Observable<Game[]> {
-    return this.firestore.collection<Game>('games').valueChanges()
+    return this.firestore.collection<Game>(this.collection).valueChanges()
+  }
+
+  addGame(game: Game) {
+    return this.firestore.collection(this.collection).add(game)
   }
 }
