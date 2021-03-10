@@ -9,10 +9,19 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { AddGameComponent } from './add-game/add-game.component';
+import { GameListComponent } from './game-list/game-list.component';
+import { ErrorComponent } from './error/error.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddGameComponent,
+    GameListComponent,
+    ErrorComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +29,8 @@ import { MaterialModule } from './material/material.module';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
