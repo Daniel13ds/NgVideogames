@@ -1,0 +1,50 @@
+<form [formGroup]="gameForm" (ngSubmit)="save()">
+  <mat-form-field appearance="outline">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Title" formControlName="title">
+    <mat-icon matSuffix>title</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Developer</mat-label>
+    <input matInput placeholder="Developer" formControlName="developer">
+    <mat-icon matSuffix>api</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Genre</mat-label>
+    <input matInput placeholder="Genre" formControlName="genre">
+    <mat-icon matSuffix>gamepad</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Platform</mat-label>
+    <input matInput placeholder="Platform" formControlName="platform">
+    <mat-icon matSuffix>sports_esports</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Score</mat-label>
+    <input matInput placeholder="Score" formControlName="score">
+    <mat-icon matSuffix>star_purple500</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Year</mat-label>
+    <input matInput placeholder="Year" formControlName="year">
+    <mat-icon matSuffix>event</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Logo</mat-label>
+    <input matInput placeholder="Logo" formControlName="logo">
+    <mat-icon matSuffix>link</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Icon</mat-label>
+    <input matInput placeholder="Icon" formControlName="icon">
+    <mat-icon matSuffix>link</mat-icon>
+  </mat-form-field>
+  <button [disabled]="!gameForm.valid" mat-raised-button color="primary" type="submit">Guardar</button>
+</form>
