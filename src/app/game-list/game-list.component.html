@@ -1,0 +1,7 @@
+<mat-card *ngFor="let game of games | async" class="example-card">
+    <mat-card-header>
+      <img mat-card-avatar class="example-header-image" src={{game.icon}}/>
+      <mat-card-title>{{game.title}}</mat-card-title>
+      <mat-card-subtitle>{{game.developer}}</mat-card-subtitle>
+    </mat-card-header>
+</mat-card>
