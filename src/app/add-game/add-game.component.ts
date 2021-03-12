@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { generate } from 'rxjs';
 import { Game } from 'src/models/game';
-import { FirebaseService } from '../firebase.service';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-add-game',

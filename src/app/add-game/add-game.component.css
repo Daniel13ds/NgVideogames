@@ -43,3 +43,7 @@ section {
     justify-content: center;
     width: 120px;
   }
+
+  .container {
+    margin-top: 14px;
+  }

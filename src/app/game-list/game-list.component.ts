@@ -2,7 +2,7 @@ import { tap } from 'rxjs/operators'
 import { Component, OnInit } from '@angular/core'
 import { Observable } from 'rxjs'
 import { Game } from 'src/models/game'
-import { FirebaseService } from '../firebase.service'
+import { FirebaseService } from '../services/firebase.service'
 
 @Component({
   selector: 'app-game-list',

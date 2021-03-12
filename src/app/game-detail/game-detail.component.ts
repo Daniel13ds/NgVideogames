@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Game } from 'src/models/game';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-game-detail',
@@ -9,5 +10,11 @@ import { Game } from 'src/models/game';
 export class GameDetailComponent {
 
   @Input() game: Game
+
+  constructor(private firebaseService: FirebaseService) {}
+
+  delete() {
+    this.firebaseService.deleteGame(this.game)
+  }
 
 }

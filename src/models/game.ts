@@ -1,4 +1,5 @@
 export interface Game {
+    key?: string;
     title: string
     genre: string
     developer: string
