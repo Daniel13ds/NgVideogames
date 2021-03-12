@@ -14,6 +14,7 @@ import { GameListComponent } from './game-list/game-list.component';
 import { ErrorComponent } from './error/error.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { GameDetailComponent } from './game-detail/game-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddGameComponent,
     GameListComponent,
     ErrorComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    GameDetailComponent
   ],
   imports: [
     BrowserModule,

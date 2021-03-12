@@ -1,7 +1,18 @@
-<mat-card *ngFor="let game of games | async" class="example-card">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5 left">
+      <p *ngFor="let game of games | async" >
+<mat-card class="example-card" [class.selected]="game === selectedGame" (click)="select(game)">
     <mat-card-header>
       <img mat-card-avatar class="example-header-image" src={{game.icon}}/>
       <mat-card-title>{{game.title}}</mat-card-title>
-      <mat-card-subtitle>{{game.developer}}</mat-card-subtitle>
+      <mat-card-subtitle [class.selected]="game === selectedGame">{{game.developer}}</mat-card-subtitle>
     </mat-card-header>
 </mat-card>
+</p>
+</div>
+<div class="col-md-7">
+  <app-game-detail [game]="selectedGame"></app-game-detail>
+</div>
+</div>
+</div>

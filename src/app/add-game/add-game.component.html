@@ -1,3 +1,4 @@
+<div class="container">
 <form [formGroup]="gameForm" (ngSubmit)="save()">
   <mat-form-field appearance="outline">
     <mat-label>Title</mat-label>
@@ -48,3 +49,4 @@
   </mat-form-field>
   <button [disabled]="!gameForm.valid" mat-raised-button color="primary" type="submit">Guardar</button>
 </form>
+</div>

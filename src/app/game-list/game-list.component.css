@@ -1,14 +1,30 @@
 .example-card {
-    margin-top: 7px;
-    margin-left: 7px;
-    max-width: 50%;
     padding-bottom: 0%;
 }
-  
+
 .example-header-image {
     background-size: cover;
   }
 
 .mat-grid-tile {
     background: lightblue;
+}
+
+.container-fluid {
+  margin-top: 14px;
+  margin-left: 7px;
+}
+
+.left {
+  overflow: auto;
+  max-height: 100vh;
+}
+
+.selected {
+  background-color: orange;
+  color: black;
+}
+
+mat-card-subtitle.selected {
+  color: black;
 }
