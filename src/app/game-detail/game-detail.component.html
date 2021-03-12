@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <img mat-card-avatar class="example-header-image" src={{game?.icon}}/>
+    <mat-card-title>{{game?.title}}</mat-card-title>
+    <mat-card-subtitle>{{game?.developer}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{game?.logo}}>
+  <mat-card-content>
+    <p>{{game?.platform}} - {{game?.year}}</p>
+    <p>Videogame of the genre {{game?.genre}} with a score of {{game?.score}}/10</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent">Edit</button>
+    <button mat-raised-button color="warn" style="color: black;">Delete</button>
+  </mat-card-actions>
+</mat-card>
