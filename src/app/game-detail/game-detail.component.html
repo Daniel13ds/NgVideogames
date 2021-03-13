@@ -4,13 +4,13 @@
     <mat-card-title>{{game?.title}}</mat-card-title>
     <mat-card-subtitle>{{game?.developer}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src={{game?.logo}}>
+  <img mat-card-image src={{game?.logo}} class="imagen">
   <mat-card-content>
     <p>{{game?.platform}} - {{game?.year}}</p>
     <p>Videogame of the genre {{game?.genre}} with a score of {{game?.score}}/10</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button color="accent">Edit</button>
+    <button mat-raised-button color="accent" (click)="edit()">Edit</button>
     <button mat-raised-button color="warn" style="color: black" (click)="delete()">Delete</button>
   </mat-card-actions>
 </mat-card>

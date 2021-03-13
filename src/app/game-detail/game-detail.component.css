@@ -1,8 +1,17 @@
 
 .example-card {
-  max-width: 400px;
+  width: 50vh;
+  max-height: 85vh;
 }
 
 .example-header-image {
-  background-size: cover;
+  max-width: max-content;
+  max-height: min-content;
+}
+
+.imagen {
+  height: 50vh;
+  width: 50vh;
+  background-repeat: no-repeat;
+  background-size: inherit;
 }
