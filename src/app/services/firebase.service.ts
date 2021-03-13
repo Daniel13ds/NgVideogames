@@ -24,11 +24,19 @@ export class FirebaseService {
     )
   }
 
+  getBook(key: string) {
+    return this.firestore.collection<Game>(this.collection).doc(key).get()
+  }
+
   addGame(game: Game) {
     return this.firestore.collection(this.collection).add(game)
   }
 
   deleteGame(game: Game) {
     return this.firestore.collection(this.collection).doc(game.key).delete()
+  }
+
+  updateGame(game: Game, key: string) {
+    return this.firestore.collection<Game>(this.collection).doc(key).update(game)
   }
 }

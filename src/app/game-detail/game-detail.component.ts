@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Game } from 'src/models/game';
 import { FirebaseService } from '../services/firebase.service';
 
@@ -11,10 +12,14 @@ export class GameDetailComponent {
 
   @Input() game: Game
 
-  constructor(private firebaseService: FirebaseService) {}
+  constructor(private firebaseService: FirebaseService, private router: Router) {}
 
   delete() {
     this.firebaseService.deleteGame(this.game)
+  }
+
+  edit() {
+    this.router.navigate(['/new', this.game.key])
   }
 
 }

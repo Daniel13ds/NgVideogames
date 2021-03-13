@@ -7,6 +7,7 @@ import { GameListComponent } from './game-list/game-list.component';
 const routes: Routes = [
   {path: '', component: GameListComponent},
   {path: 'new', component: AddGameComponent},
+  {path: 'new/:key', component: AddGameComponent},
   {path: '**', component: ErrorComponent}
 ];
 
